@@ -2,6 +2,4 @@
 
 #include <cstdlib>
 
-auto main(void) -> int {
-    return EXIT_SUCCESS;
-}
+auto main(void) -> int { return EXIT_SUCCESS; }
