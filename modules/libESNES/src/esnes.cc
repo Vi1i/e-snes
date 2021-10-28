@@ -1,5 +1,10 @@
 #include <esnes/esnes.h>
 
+#include <cstdio>
 #include <cstdlib>
 
-auto main(int argc, const char* argv[]) -> int { return EXIT_SUCCESS; }
+namespace esnes {
+void esnes() {
+  puts("esnes");
+}
+}  // namespace esnes

@@ -6,4 +6,5 @@ include(CMakePackageConfigHelpers)
 include(CMakeFindDependencyMacro)
 
 add_subdirectory(modules/libESNES)
+add_subdirectory(modules/cli)
 #add_subdirectory(test)
