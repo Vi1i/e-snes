@@ -1,6 +1,3 @@
-#include <cstdio>
-#include <cstdlib>
-
 #include <esnes/esnes.h>
 
 auto main(int argc, const char* argv[]) -> int {
