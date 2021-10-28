@@ -30,7 +30,6 @@ install(TARGETS esnes-cli
         RUNTIME DESTINATION bin
         INCLUDES DESTINATION include
         )
-install(DIRECTORY include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 
 write_basic_package_version_file(
         esnes-cliConfigVersion.cmake

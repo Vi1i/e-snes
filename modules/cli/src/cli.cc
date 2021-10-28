@@ -1,8 +1,10 @@
-#include <cstdio>
+#include <iostream>
 #include <cstdlib>
 
 #include <esnes/esnes.h>
 
 auto main(int argc, const char* argv[]) -> int {
-  esnes::esnes();
+    std::cout << esnes::esnes() << std::endl;
+
+    return EXIT_SUCCESS;
 }
