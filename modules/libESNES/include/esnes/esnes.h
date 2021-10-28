@@ -4,7 +4,7 @@
 #include <string>
 
 namespace esnes {
-auto esnes() -> std::string; 
+auto esnes() -> std::string;
 }  // namespace esnes
 
 #endif  // ESNES_ESNES_H

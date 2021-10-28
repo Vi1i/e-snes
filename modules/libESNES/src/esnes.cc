@@ -5,7 +5,5 @@
 #include <cstdlib>
 
 namespace esnes {
-    auto esnes() -> std::string {
-        return meta::version_string;
-    }
+auto esnes() -> std::string { return meta::version_string; }
 }  // namespace esnes
