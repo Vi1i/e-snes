@@ -1,0 +1,10 @@
+#ifndef libESNES_version_h
+#define libESNES_version_h
+
+namespace esnes::meta {
+    static constexpr auto version_string { "@PROJECT_VERSION@" };
+    static constexpr auto version_major { @PROJECT_VERSION_MAJOR@ };
+    static constexpr auto version_minor { @PROJECT_VERSION_MINOR@ };
+    static constexpr auto version_patch { @PROJECT_VERSION_PATCH@ };
+}  // namespace esnes::meta
+#endif
