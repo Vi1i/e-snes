@@ -6,7 +6,7 @@
 #include <vector>
 
 namespace esnes {
-void esnes();
+auto test_func() -> std::string;
 
 namespace constants {
 static constexpr const auto smc_header_size{512u};

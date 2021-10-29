@@ -1,13 +1,11 @@
 #include <esnes/esnes.h>
+#include <esnes/version.h>
 
 #include <cstdio>
 #include <fstream>
 
 namespace esnes {
-void esnes() {
-
-  puts("esnes");
-}
+auto test_func() -> std::string { return meta::version_string; }
 
 auto read_rom(const std::filesystem::path& file) -> std::vector<types::byte> {
   std::ifstream instream(file, std::ios::binary);
@@ -31,6 +29,7 @@ auto check_smc_header(const std::vector<types::byte>& rom_data) -> smc_state {
     default:
       return smc_state::malformed;
   }
+  return smc_state::malformed;
 }
 
 auto remove_smc_header(const std::vector<types::byte>& rom_data)
