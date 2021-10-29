@@ -21,7 +21,8 @@ enum class smc_state { exists, none, malformed };
  * @param file path to rom file
  * @return a vector of byte data representing an sfc rom file
  */
-auto read_rom(const std::filesystem::path& file) -> std::vector<common::types::byte>;
+auto read_rom(const std::filesystem::path& file)
+    -> std::vector<common::types::byte>;
 
 /**
  * @brief Check the state of a rom's smc header
@@ -35,7 +36,8 @@ auto read_rom(const std::filesystem::path& file) -> std::vector<common::types::b
  * @return smc_state::none if the smc header does not exist
  * @return smc_state::malformed in any other case
  */
-auto check_smc_header(const std::vector<common::types::byte>& rom_data) -> smc_state;
+auto check_smc_header(const std::vector<common::types::byte>& rom_data)
+    -> smc_state;
 
 /**
  * @brief Remove the smc header from a rom data buffer
